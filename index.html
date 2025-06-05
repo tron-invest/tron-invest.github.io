@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Investment Landing Page</title>
+    <title lang="en">Earn 1% Daily with TRON Network - Secure Cryptocurrency Investments</title>
+    <title lang="ru">Зарабатывайте 1% Ежедневно с TRON Network - Безопасные Криптовалютные Инвестиции</title>
     
-  <script type="module" crossorigin src="/assets/index.2911b17a.js"></script>
-  <link rel="stylesheet" href="/assets/index.1276a598.css">
+    <meta name="description" lang="en" content="Earn 1% daily on your investment with TRON Network. Invest and withdraw easily.">
+    <meta name="description" lang="ru" content="Зарабатывайте 1% ежедневно на ваши инвестиции с TRON Network. Инвестируйте и выводите средства легко.">
+    <meta name="keywords" content="TRON, investment, earn daily, cryptocurrency, TRC20, blockchain">
+  <script type="module" crossorigin src="/assets/index.15cbf777.js"></script>
+  <link rel="stylesheet" href="/assets/index.91d7345b.css">
 </head>
 <body>
     <div id="app"></div>
@@ -28,4 +32,21 @@
   gtag('js', new Date());
 
   gtag('config', 'G-WD3HT8S5DV');
+</script>
+
+<script>
+  const userLang = navigator.language || navigator.userLanguage;
+  const lang = userLang.split('-')[0]; // 'en' or 'ru'
+
+  document.querySelectorAll('meta[name="description"]').forEach(meta => {
+    if (meta.getAttribute('lang') !== lang) {
+      meta.parentNode.removeChild(meta);
+    }
+  });
+
+  document.querySelectorAll('title').forEach(title => {
+    if (title.getAttribute('lang') !== lang) {
+      title.parentNode.removeChild(title);
+    }
+  });
 </script>
